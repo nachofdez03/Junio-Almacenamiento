@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<!-- MCDONALDS -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>McDonald's®</title>
+    <link rel="icon" href="Imagenes/Logo.png" type="image/png">
+    <link rel="stylesheet" href="Style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav_lista" id="menu">
+          <li id="logo">
+            <a href=""><img src="Imagenes/Logo.svg" class="image_logo" /></a
+            ><!-- Foto Logo -->
+          </li>
+          <li class="li" id="inicio"><a href="">Inicio</a></li>
+          <li class="li"><a href="">Nosotros</a></li>
+          <li class="li"><a href="">Reservas</a></li>
+          <li class="li">
+            <a class="nav-link dropdown-toggle show"
+              href="#"
+              id="navCats"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="true">Categorías</a>
+              <ul class="dropdown-menu" data-bs-popper="static"></ul>
+
+          </li>
+          <li class="li">
+            <a class="nav-link dropdown-toggle show"
+              href="#"
+              id="navAler"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="true">Alergias</a>
+              <ul class="dropdown-menu" data-bs-popper="static"></ul>
+
+          </li>
+
+          <li class="li">
+            <a class="nav-link dropdown-toggle show"
+              href="#"
+              id="navMenus"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="true">Menus</a>
+              <ul class="dropdown-menu" data-bs-popper="static"></ul>
+
+          </li>
+          <li class="li">
+            <a class="nav-link dropdown-toggle show"
+            href="#"
+            id="navRes"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="true">Restaurantes</a>
+            <ul class="dropdown-menu" data-bs-popper="static"></ul>
+
+          </li>
+          <div id="userArea" class="identifier li"></div>
+
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Divs: Foto carrusel, segundo div para las fotos aleatorias, tercero para las categorias y fotos y mostrarlos
+    que tambien es donde iran las fotos y cuarto para el enlace a la descarga de app y play store -->
+
+    <!-- Foto Carrusel -->
+    <main class="main" id="main">
+      <section>
+        <img src="Imagenes/FotoGrandeDiv1.jpg" class="section_image" />
+      </section>
+
+      <section id="categories"></section>
+      <section id="dishes"></section>
+
+      <!-- Foto Doble Anuncio -->
+      <section class="Anuncio">
+
+        <div class="Anuncios2 izquierda arriba">
+          <div class="fotoAnuncio">
+            <img src="Imagenes/Nuggets.jpeg" class="Nuggets" />
+          </div>
+          <div class="Anuncio_enlace">
+            <div class="Textos">
+              <h2><b>¡6 McNuggets® por 2€! </b></h2>
+              <p>¡Descárgate la App!, y disfruta de nuestra <br> oferta de la semana y muchas más.</p>
+            </div class="Textos">
+            <button type="button" class="btn btn-warning btn-lg">Regístrate</button>
+          </div>
+        </div>
+
+        <div class="Anuncios derecha arriba">
+          <div class="fotoAnuncio">
+            <img src="Imagenes/Hamburguesas/McCrispy.png" class="McCheese" />
+          </div>
+          <div class="Anuncio_enlace">
+            <div class="Textos">
+              <h2><b>NUEVA McCrispy® Original </b></h2>
+              <p>¡Pídela ya!, ¡nosotros nos encargamos de llevártelo!</p>
+            </div class="Textos">
+            <button type="button" class="btn btn-warning btn-lg">¡Pruébala ya!</button>
+          </div>
+        </div>
+
+        
+        <div class="Anuncios fotoColorAnuncio izquierda abajo ">
+          <div class="fotoAnuncio ">
+            <img src="Imagenes/AnuncioPaint.png" class="AnunciOferta" />
+          </div>
+          <div class="Anuncio_enlace2 ">
+            <div class="Textos">
+              <h2><b>Sorpresas con MyMcDonald's®
+              </b></h2>
+              <p>Acumula puntos en cada pedido y canjéalos por regalos increíbles.
+              </p>
+            </div class="Textos">
+            <button type="button" class="btn btn-warning btn-lg">Regístrate</button>
+          </div>
+        </div>
+
+        
+        <div class="Anuncios derecha abajo">
+          <div class="fotoAnuncio">
+            <img src="Imagenes/Hamburguesas/BigMac.png" class="McCheese" />
+          </div>
+          <div class="Anuncio_enlace">
+            <div class="Textos">
+              <h2><b>Pide la legendaria Big Mac®
+              </b></h2>
+              <p>Descubre nuestra icónica Big Mac ahora más caliente, <br> más jugosa y ¡mucho más sabrosa!</p>
+            </div class="Textos">
+            <button type="button" class="btn btn-warning btn-lg">¡Pídela ya!</button>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <!-- Div Descarga -->
+        <div class="Descarga">
+          <img src="Imagenes/QR App.svg" class="fotoQR">
+          <div class="TextoDescarga">
+            <h1 class="h1"><b>De tu móvil a la mesa: ¡Descarga la App ya!</b></h1>
+            <p class="p">Novedades, ofertas personalizadas, merchandising y mucho más. ¿Algo mejor?
+
+            </p>
+            <div class="DivStore">
+              <a href="https://apps.apple.com/es/app/mcdonalds/id1217507712"><img src="Imagenes/Apple Store.png" class="Stores"></a>
+              <a href="https://play.google.com/store/apps/details?id=com.mcdonalds.mobileapp&hl=es&gl=US"><img src="Imagenes/Google Play.png" class="Stores"></a>
+            </div>
+          </div>
+          </div>
+
+        <!-- Div Foto -->
+        <div class="FotoDiseño"><img src="Imagenes/FotoDiseñoColores.svg" class="fotoDescarga"></div>
+      </section>
+    </main>
+
+    <footer class="footer"> 
+      <div class="SocialMedia">
+        <div class="Síguenos">
+          <h2><b>Síguenos</b></h2>
+        </div>
+
+        <div class="Iconos">
+          <ul class="lista_iconos">
+            <li><a><img src="Imagenes/Redes Sociales/Facebook.png" class="fotoIcono"></a></li>
+            <li><a><img src="Imagenes/Redes Sociales/Instagram.png" class="fotoIcono"></a></li>
+            <li><a><img src="Imagenes/Redes Sociales/Youtube.png" class="fotoIcono"></a></li>
+            <li><a><img src="Imagenes/Redes Sociales/Tik tok.png" class="fotoIcono"></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <nav class="nav_footer">
+
+        <div class="column">
+          <h4>McDonald's®</h4>
+          <div class="enlaces">
+            <a href="">Sobre McDonald's®</a>
+            <a href="">Nuestros compromisos</a>
+            <a href="">Sala de prensa</a>
+            <a href="">Canal de comunicaciones</a>
+            <a href="">Fraude en internet</a>
+      
+          </div>
+        </div>
+
+        <div class="column">
+          <h4>Productos y servicios</h4>
+          <div class="enlaces">
+            <a href="">Productos McDonald's®</a>
+            <a href="">McCafé®</a>
+            <a href="">McDelivery®</a>
+            <a href="">Servicios en restaurantes</a>
+            <a href="">Menú nocturno</a>
+            <a href="">Fraude en internet</a>
+          </div>
+        </div>
+
+        <div class="column">
+          <h4>McDonald's® en familia</h4>
+          <div class="enlaces">
+            <a href="">Cumpleaños McDonald's®</a>
+            <a href="">Servicios para familias</a>
+            <a href="">Happy Readers</a>
+            <a href="">Happy Meal®</a>  
+          </div>
+        </div>
+
+        <div class="column">
+          <h4>Equipo McDonald's®</h4>
+          <div class="enlaces">
+            <a href="">Contáctanos</a>
+            <a href="">Nuestras oficinas</a>
+            <a href="">Trabaja con nosotros</a>
+            <a href="">Franquíciate</a>      
+          </div>
+        </div>
+
+      </nav>
+
+      <div class="logo_footer">
+        <img src="Imagenes/Logo_Mini.png" class="logo_mini">
+        <span>Copyright © 2023 McDonald's® España</span>
+      </div>
+
+    </footer>
+    <div class="modal fade" id="messageModal" data-bs-backdrop="static" databs-keyboard="false" tabindex="-1" aria-labelledby="messageModalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialogscrollable">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="messageModalTitle">Modal title</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">...</div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+          </div>
+      </div>
+    </div>
+  
+    <script type="module" src="js/RestaurantApp.js"></script>
+  </body>
+  
+</html>
+
+<!-- Foto Logo tamaño -->

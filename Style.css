@@ -1,0 +1,537 @@
+body {
+  height: 555vh;
+  display: grid;
+  grid-template-rows: 2.5% 84% 13.5%; /*Dividimos el body en header, main y footer*/
+}
+
+#bodyDish {
+  height: 155vh;
+  display: grid;
+  grid-template-rows: 10% 54% 36%; /*Dividimos el body en header, main y footer*/
+}
+
+/* HEADER */
+header {
+  background-color: white;
+}
+
+.nav_lista {
+  display: flex;
+  height: 100%;
+  align-items: center; /* Centra verticalmente los elementos */
+  margin: 0.5em;
+}
+
+.nav_lista a {
+  text-decoration: none; /* Eliminamos la decoración de los enlaces */
+
+  color: black;
+}
+
+.li {
+  margin-left: 5em;
+  display: flex;
+}
+
+.nav_lista li {
+  list-style-type: none; /* Elimina las viñetas (puntos) de la lista */
+  font-size: 0.9em;
+}
+
+.nav_lista li:first-child {
+  margin-left: 0; /* Elimina el margen izquierdo del primer elemento */
+}
+
+.image_logo {
+  width: 60%;
+  height: auto;
+  margin-left: 2em;
+}
+
+nav {
+  height: 100%;
+}
+
+/* MAIN */
+.main {
+  display: grid;
+  grid-template-rows: 0.5fr 0.7fr 0.6fr 2fr 1fr; /*Dividimos el main en 3 partes*/
+  background-color: yellow;
+  width: 100%;
+  height: auto;
+}
+
+/* 1º Main: Foto*/
+.section_image {
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+/*2º Main: Anuncios */
+.Anuncio {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dividir en dos columnas */
+  background-color: white;
+  width: 100%;
+  align-items: center;
+}
+
+.Anuncios {
+  display: flex;
+  flex-direction: column;
+  width: 72%;
+  height: 82%;
+  background: linear-gradient(to right, orange, yellow);
+  align-items: center;
+  border: solid white(0, 0, 0, 0); /* Borde transparente */
+  border-radius: 1.5em; /* Circulares circulares */
+  border-bottom-left-radius: 1.5em; /* Borde inferior izquierdo */
+  border-bottom-right-radius: 1.5em; /* Borde inferior derecho */
+  border-bottom-left-radius: 1.5em; /* Borde inferior izquierdo */
+  box-shadow: 0 1em 1em rgba(0, 0, 0, 0.4); /* Agrega una sombra */
+}
+
+.Anuncios2 {
+  display: flex;
+  flex-direction: column;
+  width: 72%;
+  height: 82%;
+  background-color: white;
+  align-items: center;
+  border: solid white(0, 0, 0, 0); /* Borde transparente */
+  border-radius: 1.5em; /* Circulares circulares */
+  border-bottom-left-radius: 1.5em; /* Borde inferior izquierdo */
+  border-bottom-right-radius: 1.5em; /* Borde inferior derecho */
+  border-bottom-left-radius: 1.5em; /* Borde inferior izquierdo */
+  box-shadow: 0 1em 1em rgba(0, 0, 0, 0.4); /* Agrega una sombra */
+}
+
+.Anuncio_enlace {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50%;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.5em; /* Circulares circulares */
+  border-bottom: 2px solid white; /* Borde inferior blanco */
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+.Anuncio_enlace2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50%;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.5em; /* Circulares circulares */
+  border-bottom: 2px solid white; /* Borde inferior blanco */
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.fotoAnuncio {
+  display: flex;
+  justify-content: center;
+
+  height: 50%;
+  margin-bottom: 1em;
+}
+
+.izquierda {
+  justify-self: end; /* como el content, pero aqui sirve para ir uno por uno */
+  margin-right: 1.4em;
+}
+
+.derecha {
+  justify-self: start;
+  margin-left: 1.4em;
+}
+
+.arriba {
+  align-self: end;
+  margin-bottom: 1.4em;
+}
+
+.abajo {
+  align-self: start;
+  margin-top: 1.4em;
+}
+
+.Textos {
+  padding-bottom: 1em;
+  text-align: center;
+  background-color: white;
+  border-top: 0; /* Eliminar borde superior */
+}
+
+/* Foto anuncios */
+.McCheese {
+  display: flex;
+  width: 42%;
+  height: auto;
+}
+
+.Nuggets {
+  width: 90%;
+  height: auto;
+}
+.AnunciOferta {
+  width: 90%;
+  height: auto;
+  margin-top: 10px;
+}
+.fotoColor {
+  background: linear-gradient(to white, white);
+}
+.fotoColorAnuncio {
+  background: linear-gradient(to right, purple 0%, red 50%, orange 100%);
+}
+.texto {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 4.9em;
+}
+
+/* Div de anuncio de descarga */
+.Descarga {
+  display: flex;
+  width: 100%;
+  height: 80%;
+  background-color: #ffbc09;
+  justify-content: center;
+}
+
+.fotoQR {
+  width: 25%;
+  height: auto;
+  margin-right: 7em;
+}
+.TextoDescarga {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5em;
+  width: 40%;
+}
+.FotoDiseño {
+  height: 30%;
+  background-color: white;
+}
+
+.DivStore {
+  display: flex;
+  width: 100%;
+  height: 40%;
+  align-items: self-start;
+  margin-top: 1em;
+}
+
+.Stores {
+  width: 75%;
+  height: auto;
+}
+
+.Descarga .TextoDescarga .h1 {
+  font-size: 3em; /* Tamaño de la letra deseado */
+  color: black;
+}
+
+.Descarga .TextoDescarga .p {
+  font-size: 1em;
+  color: black;
+  margin-top: 1em;
+}
+/* FOOTER */
+
+.SocialMedia {
+  display: flex;
+  flex-direction: column;
+  height: 30%;
+  align-items: center;
+}
+
+.lista_iconos li {
+  list-style-type: none; /* Elimina las viñetas (puntos) de la lista */
+}
+
+.lista_iconos {
+  display: flex;
+}
+
+.fotoIcono {
+  width: 65%;
+}
+
+.Iconos {
+  margin-top: 1em;
+}
+
+.nav_footer {
+  display: flex;
+  height: 50%;
+  gap: 9em;
+  justify-content: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 1em;
+}
+
+.enlaces {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.nav_footer .enlaces a {
+  color: #363232;
+}
+
+.logo_footer {
+  display: flex;
+  width: 40%;
+  height: 20%;
+  align-items: center;
+  justify-content: center;
+  margin-left: 27.5%;
+  gap: 0.7em;
+  margin-top: 1em;
+}
+
+.logo_mini {
+  width: 6.5%;
+  height: 35%;
+}
+
+/* PARTE DE CLIENTE ( JS )  */
+
+#category-list {
+  display: flex;
+  height: 70%;
+  margin-top: 2em;
+}
+
+.category-item {
+  max-width: 33.3%;
+  max-height: auto;
+  margin-left: 0.2em;
+}
+
+.category-image {
+  width: 40%;
+  justify-content: center;
+}
+
+#categories {
+  background-color: white;
+}
+.fotoCategoria {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+.textoH1 {
+  display: flex;
+  justify-content: center;
+  height: 20%;
+  align-items: center;
+  font-family: "Caveat";
+  font-size: 2.5em;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.flex6 {
+  display: flex;
+}
+.category__container {
+  padding: 5em;
+}
+.container {
+  width: 100%;
+}
+
+.category {
+  width: 100%;
+}
+.TextoCategorias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  height: 25%;
+}
+
+.Patatas {
+  margin-top: 1.2em;
+}
+
+.Helados {
+  margin-top: 1.2em;
+}
+
+.enlaceCategorias {
+  text-decoration: none;
+}
+
+#dishes {
+  background-color: white;
+}
+
+#random-dishes {
+  height: 100%;
+}
+.random-item {
+  width: 100%;
+  height: 100%;
+}
+.platosRandom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70%;
+}
+
+.random-image {
+  width: 40%;
+}
+
+#dish-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.plate-item {
+  display: flex;
+  justify-content: center;
+  width: 25%;
+}
+
+#fotoDish {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 40%;
+}
+
+.nombreDish {
+  display: flex;
+  text-align: center;
+  margin-left: 40%;
+}
+
+.dish-image {
+  width: 50%;
+  height: auto;
+}
+
+/* Información del plato*/
+
+.contenedorPlato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.contenedorElementos {
+  display: flex;
+  width: 50%;
+  height: 80%;
+  background-color: white;
+  border: solid white(0, 0, 0, 0); /* Borde transparente */
+  border-radius: 1.5em; /* Circulares circulares */
+  border-bottom-left-radius: 1.5em; /* Borde inferior izquierdo */
+  border-bottom-right-radius: 1.5em; /* Borde inferior derecho */
+  border-bottom-left-radius: 1.5em; /* Borde inferior izquierdo */
+  border-top: solid white(0, 0, 0, 0); /* Borde superior similar a los otros bordes */
+  box-shadow: 0 1em 1em rgba(0, 0, 0, 0.4); /* Agrega una sombra */
+}
+
+.contenedorFotoPlato {
+  display: flex;
+  width: 45%;
+  align-items: center;
+  justify-content: center;
+}
+
+.fotoPlato {
+  width: 75%;
+  height: auto;
+}
+
+.contenedorElementosPlato {
+  display: flex;
+  align-items: center;
+  width: 55%;
+  flex-direction: column;
+}
+
+.contenedorElementosPlato1 {
+  display: flex;
+  width: 100%;
+  height: 35%;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedorElementosPlato2 {
+  display: flex;
+  width: 75%;
+  height: 35%;
+  text-align: center;
+}
+
+.contenedorElementosPlato3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30%;
+  gap: 0.7em;
+}
+
+.h5Plato {
+  font-size: 2em;
+  font-family: cursive;
+}
+
+.restaurantFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#botonCerrarVentanas {
+  position: absolute;
+  right: 1em; /* Alinea el botón a la derecha del contenedor */
+  margin-right: 5em;
+}
+
+/* Formularios JS */
+.colorFondo {
+  background: linear-gradient(to right, orange, yellow);
+}
+
+#userArea {
+  margin-top: 1em;
+}
